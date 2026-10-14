@@ -10,10 +10,10 @@ PANORA was developed following a comparative study of established upper ontologi
 
 The architecture distinguishes four domains:
 
-- **Physical:** entities considered in relation to physical existence and spatial and temporal characteristics.
-- **Abstract:** conceptual and other non-physical entities considered independently of particular physical instances.
-- **Subjective:** entities associated with first-person experience and subject-dependent phenomena.
-- **Transcendent:** metaphysical or theological entities treated as a distinct foundational domain within the proposed model.
+- **Physical:** entities that exist independently of individual experience and mental structures, but are situated in space and time and participate in causal relations.
+- **Abstract:** conceptual entities that depend on shared mental structures but are independent of individual experience, causal relations, space, and time.
+- **Subjective:** phenomena that depend on first-person experience, occur within spatial and temporal contexts, and participate in causal relations, independently of shared mental structures.
+- **Transcendent:** metaphysical or theological entities that are independent of individual experience, mental structures, space, and time, but can participate in causal relations.
 
 Domain distinctions are guided by five criteria: **first-person dependence**, **mental structure**, **causality**, **place**, and **time**.
 
