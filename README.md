@@ -2,7 +2,7 @@
 
 PANORA is a proposed upper ontology that organizes entities into four foundational domains: **Physical**, **Abstract**, **Subjective**, and **Transcendent**. The project explores how these domains can be distinguished within a shared conceptual framework and represented in OWL.
 
-This repository provides a preliminary ontology model and an HTML-based interface for examining its conceptual organization. The associated research is described in the [published PANORA article](#publication-and-citation).
+This repository provides a preliminary ontology model and a web-based interface for examining its conceptual organization. The associated research is described in the [published PANORA article](#publication-and-citation).
 
 ## Conceptual approach
 
@@ -23,13 +23,19 @@ Domain distinctions are guided by five criteria: **first-person dependence**, **
 | --- | --- |
 | [`PANORA.owl`](./PANORA.owl) | Preliminary machine-readable representation of the ontology. |
 | [`index.html`](./index.html) | HTML interface for exploring the ontology's conceptual structure. |
-| `README.md` | Overview, access instructions, research status, and citation information. |
+| `README.md` | Project overview, access instructions, research status, and citation information. |
+| [`CITATION.cff`](./CITATION.cff) | Machine-readable citation information for the PANORA project and its associated publication. |
 
 ## Using the project
 
-**Explore the ontology:** The `index.html` file contains the project's HTML interface. A public GitHub Pages URL will be added here once deployment on the new repository is configured and verified.
+PANORA is publicly accessible through the following resources:
 
-**Inspect the OWL model:** Download [`PANORA.owl`](./PANORA.owl) and open it using an OWL-compatible ontology editor, such as [Protégé](https://protege.stanford.edu/).
+- **Online Ontology Explorer:** [Explore PANORA](https://neuromind404.github.io/PANORA/)
+- **OWL Ontology File:** [Download or inspect PANORA.owl](./PANORA.owl)
+
+The web-based ontology explorer provides an interactive interface for examining the conceptual structure of PANORA, including its class hierarchy and available definitions.
+
+To inspect the machine-readable ontology, download [`PANORA.owl`](./PANORA.owl) and open it using an OWL-compatible ontology editor, such as [Protégé](https://protege.stanford.edu/).
 
 ## Research evaluation and limitations
 
@@ -39,10 +45,16 @@ This repository contains a **preliminary research artifact**, not a formally val
 
 ## Publication and citation
 
-For scholarly use, please cite the original PANORA publication:
+PANORA is described in the following peer-reviewed publication:
 
-> Khosravi, A., Safdari, R., Rabiei, F., Tajerloo, Z., and Najafi, Z. (2026). *PANORA: A Four-Domain Upper Ontology for Rule-Based AI and Semantic Knowledge Representation*. **Journal of Distributed Computing and Systems**, 9(1), 96–110.
+> Khosravi, A., Safdari, R., Rabiei, F., Tajerloo, Z., & Najafi, Z. (2026). PANORA: A Four-Domain Upper Ontology for Rule-Based AI and Semantic Knowledge Representation. *Journal of Distributed Computing and Systems, 9*(1), 96–120.
+
+For scholarly use, please cite the original PANORA publication when referring to the ontology's conceptual framework, methodology, or expert evaluation.
+
+Citation information is also provided in the [`CITATION.cff`](./CITATION.cff) file. GitHub users can select **Cite this repository** to obtain citation details in supported formats, including APA and BibTeX.
 
 ## License and feedback
 
-No reuse license is specified in this repository at present. Public availability on GitHub does not by itself grant permission to redistribute or modify the files. Please contact the project maintainers about reuse permissions. Corrections and technical feedback can be submitted using the repository's Issues feature, if enabled.
+No reuse license is specified in this repository at present. Public availability on GitHub does not by itself grant permission to redistribute or modify the files. Please contact the project maintainers about reuse permissions.
+
+Corrections, suggestions, and technical feedback can be submitted through the repository's **Issues** feature, if enabled.
