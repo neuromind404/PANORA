@@ -1,0 +1,44 @@
+cff-version: 1.2.0
+message: >-
+  If you use PANORA in academic work, please cite the research article
+  listed under preferred-citation. For reproducibility, also identify
+  the repository and the specific commit or release used.
+title: "PANORA: A Four-Domain Upper Ontology"
+type: software
+authors:
+  - family-names: Khosravi
+    given-names: Arash
+  - family-names: Safdari
+    given-names: Reihaneh
+  - family-names: Rabiei
+    given-names: Fatemeh
+  - family-names: Tajerloo
+    given-names: Zeinab
+  - family-names: Najafi
+    given-names: Zahra
+keywords:
+  - upper ontology
+  - knowledge representation
+  - ontology engineering
+  - OWL
+  - semantic web
+preferred-citation:
+  type: article
+  title: "PANORA: A Four-Domain Upper Ontology for Rule-Based AI and Semantic Knowledge Representation"
+  authors:
+    - family-names: Khosravi
+      given-names: Arash
+    - family-names: Safdari
+      given-names: Reihaneh
+    - family-names: Rabiei
+      given-names: Fatemeh
+    - family-names: Tajerloo
+      given-names: Zeinab
+    - family-names: Najafi
+      given-names: Zahra
+  journal: "Journal of Distributed Computing and Systems"
+  volume: 9
+  issue: 1
+  year: 2026
+  start: 96
+  end: 120
