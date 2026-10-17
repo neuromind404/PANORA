@@ -290,15 +290,6 @@
     
 
 
-    <!-- https://example.org/PANORA-ontology#AgencyAndCausation -->
-
-    <owl:Class rdf:about="https://example.org/PANORA-ontology#AgencyAndCausation">
-        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#CausalityConcept"/>
-        <rdfs:label xml:lang="fa">عاملیت(عاملبوجود آمدن دیگری بودن)/ موجب بودن</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://example.org/PANORA-ontology#AgencyAttribute -->
 
     <owl:Class rdf:about="https://example.org/PANORA-ontology#AgencyAttribute">
@@ -482,7 +473,7 @@
     <!-- https://example.org/PANORA-ontology#Angel -->
 
     <owl:Class rdf:about="https://example.org/PANORA-ontology#Angel">
-        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#Creatures"/>
+        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#CreatedBeings"/>
         <rdfs:label xml:lang="fa">فرشته</rdfs:label>
     </owl:Class>
     
@@ -763,15 +754,6 @@
     <owl:Class rdf:about="https://example.org/PANORA-ontology#AttributeProcessPolitical">
         <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#PoliticalAttributes"/>
         <rdfs:label xml:lang="fa">ویژگی فرایند های سیاسی</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://example.org/PANORA-ontology#Attributes -->
-
-    <owl:Class rdf:about="https://example.org/PANORA-ontology#Attributes">
-        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#God"/>
-        <rdfs:label xml:lang="fa">صفات</rdfs:label>
     </owl:Class>
     
 
@@ -1222,6 +1204,24 @@
     <owl:Class rdf:about="https://example.org/PANORA-ontology#CasualAcquaintance">
         <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#SocialRelations"/>
         <rdfs:label xml:lang="fa">آشنایی سطحی</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://example.org/PANORA-ontology#CausalAgency -->
+
+    <owl:Class rdf:about="https://example.org/PANORA-ontology#CausalAgency">
+        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#CausalityConcept"/>
+        <rdfs:label xml:lang="fa">عاملیت(عاملبوجود آمدن دیگری بودن)/ موجب بودن</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://example.org/PANORA-ontology#CausalEfficacy -->
+
+    <owl:Class rdf:about="https://example.org/PANORA-ontology#CausalEfficacy">
+        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#CausalityConcept"/>
+        <rdfs:label xml:lang="fa">فاعلیت(تاثیرگذاریبر دیگری)</rdfs:label>
     </owl:Class>
     
 
@@ -1991,10 +1991,19 @@
     
 
 
+    <!-- https://example.org/PANORA-ontology#CreatedBeings -->
+
+    <owl:Class rdf:about="https://example.org/PANORA-ontology#CreatedBeings">
+        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#Transcendent"/>
+        <rdfs:label xml:lang="fa">مخلوقات</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://example.org/PANORA-ontology#Creation -->
 
     <owl:Class rdf:about="https://example.org/PANORA-ontology#Creation">
-        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#DivineActiveAttributes"/>
+        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#DivineAttributesOfAction"/>
         <rdfs:label xml:lang="fa">خلقت</rdfs:label>
     </owl:Class>
     
@@ -2023,15 +2032,6 @@
     <owl:Class rdf:about="https://example.org/PANORA-ontology#CreativeEconomy">
         <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#EmergingSectors"/>
         <rdfs:label xml:lang="fa">اقتصاد خلاق</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://example.org/PANORA-ontology#Creatures -->
-
-    <owl:Class rdf:about="https://example.org/PANORA-ontology#Creatures">
-        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#Transcendent"/>
-        <rdfs:label xml:lang="fa">مخلوقات</rdfs:label>
     </owl:Class>
     
 
@@ -2459,10 +2459,11 @@
     
 
 
-    <!-- https://example.org/PANORA-ontology#DigitalEconomy -->
+    <!-- https://example.org/PANORA-ontology#DigitalEconomyAttribute -->
 
-    <owl:Class rdf:about="https://example.org/PANORA-ontology#DigitalEconomy">
+    <owl:Class rdf:about="https://example.org/PANORA-ontology#DigitalEconomyAttribute">
         <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#EmergingSectors"/>
+        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#InnovationAndCompetitivenessAttribute"/>
         <rdfs:label xml:lang="fa">اقتصاد دیجیتال</rdfs:label>
     </owl:Class>
     
@@ -2489,7 +2490,7 @@
     <!-- https://example.org/PANORA-ontology#DigitalInfrastructure -->
 
     <owl:Class rdf:about="https://example.org/PANORA-ontology#DigitalInfrastructure">
-        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#InnovationAndCompetitivenessAttributeDigitalEconomy"/>
+        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#DigitalEconomyAttribute"/>
         <rdfs:label xml:lang="fa">زیرساخت دیجیتال</rdfs:label>
     </owl:Class>
     
@@ -2516,7 +2517,7 @@
     <!-- https://example.org/PANORA-ontology#DigitalSkills -->
 
     <owl:Class rdf:about="https://example.org/PANORA-ontology#DigitalSkills">
-        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#InnovationAndCompetitivenessAttributeDigitalEconomy"/>
+        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#DigitalEconomyAttribute"/>
         <rdfs:label xml:lang="fa">مهارت‌های دیجیتال</rdfs:label>
     </owl:Class>
     
@@ -2597,7 +2598,7 @@
     <!-- https://example.org/PANORA-ontology#Digitalization -->
 
     <owl:Class rdf:about="https://example.org/PANORA-ontology#Digitalization">
-        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#InnovationAndCompetitivenessAttributeDigitalEconomy"/>
+        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#DigitalEconomyAttribute"/>
         <rdfs:label xml:lang="fa">دیجیتالی‌شدن</rdfs:label>
     </owl:Class>
     
@@ -2738,11 +2739,29 @@
     
 
 
-    <!-- https://example.org/PANORA-ontology#DivineActiveAttributes -->
+    <!-- https://example.org/PANORA-ontology#DivineAttributes -->
 
-    <owl:Class rdf:about="https://example.org/PANORA-ontology#DivineActiveAttributes">
-        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#Attributes"/>
+    <owl:Class rdf:about="https://example.org/PANORA-ontology#DivineAttributes">
+        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#God"/>
+        <rdfs:label xml:lang="fa">صفات</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://example.org/PANORA-ontology#DivineAttributesOfAction -->
+
+    <owl:Class rdf:about="https://example.org/PANORA-ontology#DivineAttributesOfAction">
+        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#DivineAttributes"/>
         <rdfs:label xml:lang="fa">صفات فعلیه</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://example.org/PANORA-ontology#DivineAttributesOfEssence -->
+
+    <owl:Class rdf:about="https://example.org/PANORA-ontology#DivineAttributesOfEssence">
+        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#DivineAttributes"/>
+        <rdfs:label xml:lang="fa">صفات ذات</rdfs:label>
     </owl:Class>
     
 
@@ -2750,7 +2769,7 @@
     <!-- https://example.org/PANORA-ontology#DivineGrace -->
 
     <owl:Class rdf:about="https://example.org/PANORA-ontology#DivineGrace">
-        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#DivineActiveAttributes"/>
+        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#DivineAttributesOfAction"/>
         <rdfs:label xml:lang="fa">لطف</rdfs:label>
     </owl:Class>
     
@@ -2822,7 +2841,7 @@
     <!-- https://example.org/PANORA-ontology#ECommerce -->
 
     <owl:Class rdf:about="https://example.org/PANORA-ontology#ECommerce">
-        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#InnovationAndCompetitivenessAttributeDigitalEconomy"/>
+        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#DigitalEconomyAttribute"/>
         <rdfs:label xml:lang="fa">تجارت الکترونیک</rdfs:label>
     </owl:Class>
     
@@ -2831,7 +2850,7 @@
     <!-- https://example.org/PANORA-ontology#ECommerceAndDigitalPlatforms -->
 
     <owl:Class rdf:about="https://example.org/PANORA-ontology#ECommerceAndDigitalPlatforms">
-        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#DigitalEconomy"/>
+        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#DigitalEconomyAttribute"/>
         <rdfs:label xml:lang="fa">تجارت الکترونیک، پلتفرم‌های دیجیتال</rdfs:label>
     </owl:Class>
     
@@ -2840,7 +2859,7 @@
     <!-- https://example.org/PANORA-ontology#EGovernment -->
 
     <owl:Class rdf:about="https://example.org/PANORA-ontology#EGovernment">
-        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#InnovationAndCompetitivenessAttributeDigitalEconomy"/>
+        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#DigitalEconomyAttribute"/>
         <rdfs:label xml:lang="fa">دولت الکترونیک</rdfs:label>
     </owl:Class>
     
@@ -3085,15 +3104,6 @@
     <owl:Class rdf:about="https://example.org/PANORA-ontology#EducationalScientificNorms">
         <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#NormativeAttribute"/>
         <rdfs:label xml:lang="fa">هنجارهای آموزشی علمی</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://example.org/PANORA-ontology#EffectiveAgencyRelation -->
-
-    <owl:Class rdf:about="https://example.org/PANORA-ontology#EffectiveAgencyRelation">
-        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#CausalityConcept"/>
-        <rdfs:label xml:lang="fa">فاعلیت(تاثیرگذاریبر دیگری)</rdfs:label>
     </owl:Class>
     
 
@@ -3449,15 +3459,6 @@
     
 
 
-    <!-- https://example.org/PANORA-ontology#EssentialAttributes -->
-
-    <owl:Class rdf:about="https://example.org/PANORA-ontology#EssentialAttributes">
-        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#Attributes"/>
-        <rdfs:label xml:lang="fa">صفات ذات</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://example.org/PANORA-ontology#EstablishFaithCommunity -->
 
     <owl:Class rdf:about="https://example.org/PANORA-ontology#EstablishFaithCommunity">
@@ -3524,7 +3525,7 @@
     <!-- https://example.org/PANORA-ontology#Event -->
 
     <owl:Class rdf:about="https://example.org/PANORA-ontology#Event">
-        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#Occurrence"/>
+        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#Occurrent"/>
         <rdfs:label xml:lang="fa">رویداد</rdfs:label>
     </owl:Class>
     
@@ -3544,15 +3545,6 @@
     <owl:Class rdf:about="https://example.org/PANORA-ontology#EventJudicial">
         <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#CriminalEvent"/>
         <rdfs:label xml:lang="fa">رویداد های قضایی</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://example.org/PANORA-ontology#EventOccurrenceRequirement -->
-
-    <owl:Class rdf:about="https://example.org/PANORA-ontology#EventOccurrenceRequirement">
-        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#PartialCause"/>
-        <rdfs:label xml:lang="fa">از الزامات وقوع واقعه ای بودن</rdfs:label>
     </owl:Class>
     
 
@@ -4172,7 +4164,7 @@
     <!-- https://example.org/PANORA-ontology#Forgiveness -->
 
     <owl:Class rdf:about="https://example.org/PANORA-ontology#Forgiveness">
-        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#DivineActiveAttributes"/>
+        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#DivineAttributesOfAction"/>
         <rdfs:label xml:lang="fa">غفران</rdfs:label>
     </owl:Class>
     
@@ -4487,7 +4479,7 @@
     <!-- https://example.org/PANORA-ontology#Generosity -->
 
     <owl:Class rdf:about="https://example.org/PANORA-ontology#Generosity">
-        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#DivineActiveAttributes"/>
+        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#DivineAttributesOfAction"/>
         <rdfs:label xml:lang="fa">کرامت</rdfs:label>
     </owl:Class>
     
@@ -4775,7 +4767,7 @@
     <!-- https://example.org/PANORA-ontology#Guardianship -->
 
     <owl:Class rdf:about="https://example.org/PANORA-ontology#Guardianship">
-        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#DivineActiveAttributes"/>
+        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#DivineAttributesOfAction"/>
         <rdfs:label xml:lang="fa">ولایت</rdfs:label>
     </owl:Class>
     
@@ -4784,7 +4776,7 @@
     <!-- https://example.org/PANORA-ontology#Guidance -->
 
     <owl:Class rdf:about="https://example.org/PANORA-ontology#Guidance">
-        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#DivineActiveAttributes"/>
+        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#DivineAttributesOfAction"/>
         <rdfs:label xml:lang="fa">هدایت</rdfs:label>
     </owl:Class>
     
@@ -4919,7 +4911,7 @@
     <!-- https://example.org/PANORA-ontology#HearingAndSeeing -->
 
     <owl:Class rdf:about="https://example.org/PANORA-ontology#HearingAndSeeing">
-        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#DivineActiveAttributes"/>
+        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#DivineAttributesOfAction"/>
         <rdfs:label xml:lang="fa">سمیع و بصیر</rdfs:label>
     </owl:Class>
     
@@ -5474,15 +5466,6 @@
     
 
 
-    <!-- https://example.org/PANORA-ontology#IndustrialProductionIndex -->
-
-    <owl:Class rdf:about="https://example.org/PANORA-ontology#IndustrialProductionIndex">
-        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#IndustrialProduction"/>
-        <rdfs:label xml:lang="fa">شاخص تولید صنعتی</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://example.org/PANORA-ontology#IndustrialProductionMiningAndConstruction -->
 
     <owl:Class rdf:about="https://example.org/PANORA-ontology#IndustrialProductionMiningAndConstruction">
@@ -5515,6 +5498,15 @@
     <owl:Class rdf:about="https://example.org/PANORA-ontology#IndustrialTechnologyAndInnovationProcesses">
         <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#ProcessIndustrial"/>
         <rdfs:label xml:lang="fa">فرایندهای فناوری و نوآوری صنعتی</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://example.org/PANORA-ontology#Industrial_production_index -->
+
+    <owl:Class rdf:about="https://example.org/PANORA-ontology#Industrial_production_index">
+        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#IndustrialProduction"/>
+        <rdfs:label xml:lang="fa">شاخص تولید صنعتی</rdfs:label>
     </owl:Class>
     
 
@@ -5614,15 +5606,6 @@
     <owl:Class rdf:about="https://example.org/PANORA-ontology#InnovationAndCompetitivenessAttribute">
         <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#EconomicAttribute"/>
         <rdfs:label xml:lang="fa">ویژگی نوآوری و رقابت پذیری</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://example.org/PANORA-ontology#InnovationAndCompetitivenessAttributeDigitalEconomy -->
-
-    <owl:Class rdf:about="https://example.org/PANORA-ontology#InnovationAndCompetitivenessAttributeDigitalEconomy">
-        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#InnovationAndCompetitivenessAttribute"/>
-        <rdfs:label xml:lang="fa">اقتصاد دیجیتال</rdfs:label>
     </owl:Class>
     
 
@@ -5882,7 +5865,7 @@
     <!-- https://example.org/PANORA-ontology#Jinn -->
 
     <owl:Class rdf:about="https://example.org/PANORA-ontology#Jinn">
-        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#Creatures"/>
+        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#CreatedBeings"/>
         <rdfs:label xml:lang="fa">جن</rdfs:label>
     </owl:Class>
     
@@ -5963,7 +5946,7 @@
     <!-- https://example.org/PANORA-ontology#Knowledge -->
 
     <owl:Class rdf:about="https://example.org/PANORA-ontology#Knowledge">
-        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#EssentialAttributes"/>
+        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#DivineAttributesOfEssence"/>
         <rdfs:label xml:lang="fa">علم</rdfs:label>
     </owl:Class>
     
@@ -6251,7 +6234,7 @@
     <!-- https://example.org/PANORA-ontology#Life -->
 
     <owl:Class rdf:about="https://example.org/PANORA-ontology#Life">
-        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#EssentialAttributes"/>
+        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#DivineAttributesOfEssence"/>
         <rdfs:label xml:lang="fa">حیات</rdfs:label>
     </owl:Class>
     
@@ -6397,6 +6380,15 @@
     <owl:Class rdf:about="https://example.org/PANORA-ontology#Love">
         <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#Plutchikcombinedemotions"/>
         <rdfs:label xml:lang="fa">شادی + اعتماد = عشق</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://example.org/PANORA-ontology#LowMiddleAndHighIncomeLevels -->
+
+    <owl:Class rdf:about="https://example.org/PANORA-ontology#LowMiddleAndHighIncomeLevels">
+        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#IncomeClassification"/>
+        <rdfs:label xml:lang="fa">کم‌درآمد، متوسط، پردرآمد</rdfs:label>
     </owl:Class>
     
 
@@ -6701,7 +6693,7 @@
     <!-- https://example.org/PANORA-ontology#Mercy -->
 
     <owl:Class rdf:about="https://example.org/PANORA-ontology#Mercy">
-        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#DivineActiveAttributes"/>
+        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#DivineAttributesOfAction"/>
         <rdfs:label xml:lang="fa">رحمت</rdfs:label>
     </owl:Class>
     
@@ -7418,9 +7410,9 @@
     
 
 
-    <!-- https://example.org/PANORA-ontology#Occurrence -->
+    <!-- https://example.org/PANORA-ontology#Occurrent -->
 
-    <owl:Class rdf:about="https://example.org/PANORA-ontology#Occurrence">
+    <owl:Class rdf:about="https://example.org/PANORA-ontology#Occurrent">
         <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#Physical"/>
         <rdfs:label xml:lang="fa">واقعه</rdfs:label>
     </owl:Class>
@@ -8386,7 +8378,7 @@
     <!-- https://example.org/PANORA-ontology#Power -->
 
     <owl:Class rdf:about="https://example.org/PANORA-ontology#Power">
-        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#EssentialAttributes"/>
+        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#DivineAttributesOfEssence"/>
         <rdfs:label xml:lang="fa">قدرت</rdfs:label>
     </owl:Class>
     
@@ -8549,7 +8541,7 @@
 
     <owl:Class rdf:about="https://example.org/PANORA-ontology#PrivateSectorShare">
         <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#OwnershipStructure"/>
-        <rdfs:label xml:lang="fa">سهم بخش خصوصی</rdfs:label>
+        <rdfs:label xml:lang="fa">سهم شرکت خصوصی</rdfs:label>
     </owl:Class>
     
 
@@ -8566,7 +8558,7 @@
     <!-- https://example.org/PANORA-ontology#Process -->
 
     <owl:Class rdf:about="https://example.org/PANORA-ontology#Process">
-        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#Occurrence"/>
+        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#Occurrent"/>
         <rdfs:label xml:lang="fa">فرایند</rdfs:label>
     </owl:Class>
     
@@ -8818,7 +8810,7 @@
     <!-- https://example.org/PANORA-ontology#Providence -->
 
     <owl:Class rdf:about="https://example.org/PANORA-ontology#Providence">
-        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#DivineActiveAttributes"/>
+        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#DivineAttributesOfAction"/>
         <rdfs:label xml:lang="fa">رازقیت</rdfs:label>
     </owl:Class>
     
@@ -9378,6 +9370,15 @@
     <owl:Class rdf:about="https://example.org/PANORA-ontology#RequiredReserveDepositPercentage">
         <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#ReserveRequirement"/>
         <rdfs:label xml:lang="fa">درصد سپرده‌های قانونی بانک‌ها</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://example.org/PANORA-ontology#RequirementForOccurrence -->
+
+    <owl:Class rdf:about="https://example.org/PANORA-ontology#RequirementForOccurrence">
+        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#PartialCause"/>
+        <rdfs:label xml:lang="fa">از الزامات وقوع واقعه ای بودن</rdfs:label>
     </owl:Class>
     
 
@@ -10195,7 +10196,7 @@
     <!-- https://example.org/PANORA-ontology#SpeakerAttribute -->
 
     <owl:Class rdf:about="https://example.org/PANORA-ontology#SpeakerAttribute">
-        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#DivineActiveAttributes"/>
+        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#DivineAttributesOfAction"/>
         <rdfs:label xml:lang="fa">متكلم</rdfs:label>
     </owl:Class>
     
@@ -10240,7 +10241,7 @@
     <!-- https://example.org/PANORA-ontology#Spirit -->
 
     <owl:Class rdf:about="https://example.org/PANORA-ontology#Spirit">
-        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#Creatures"/>
+        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#CreatedBeings"/>
         <rdfs:label xml:lang="fa">روح</rdfs:label>
     </owl:Class>
     
@@ -10835,7 +10836,7 @@
     <!-- https://example.org/PANORA-ontology#TemporalPeriods -->
 
     <owl:Class rdf:about="https://example.org/PANORA-ontology#TemporalPeriods">
-        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#Occurrence"/>
+        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#Occurrent"/>
         <rdfs:label xml:lang="fa">دوره های زمانی</rdfs:label>
     </owl:Class>
     
@@ -10942,7 +10943,7 @@
     <!-- https://example.org/PANORA-ontology#TimePoint -->
 
     <owl:Class rdf:about="https://example.org/PANORA-ontology#TimePoint">
-        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#Occurrence"/>
+        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#Occurrent"/>
         <rdfs:label xml:lang="fa">نقطه زمانی</rdfs:label>
     </owl:Class>
     
@@ -11110,9 +11111,9 @@
     
 
 
-    <!-- https://example.org/PANORA-ontology#TranscendentObservations -->
+    <!-- https://example.org/PANORA-ontology#TranscendentMentalRepresentations -->
 
-    <owl:Class rdf:about="https://example.org/PANORA-ontology#TranscendentObservations">
+    <owl:Class rdf:about="https://example.org/PANORA-ontology#TranscendentMentalRepresentations">
         <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#MentalImages"/>
         <rdfs:label xml:lang="fa">مشاهدات ماورایی</rdfs:label>
     </owl:Class>
@@ -11303,7 +11304,7 @@
 
     <owl:Class rdf:about="https://example.org/PANORA-ontology#UnlimitedNumber">
         <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#Number"/>
-        <rdfs:label xml:lang="fa">ناکحدود</rdfs:label>
+        <rdfs:label xml:lang="fa">نامحدود</rdfs:label>
     </owl:Class>
     
 
@@ -11545,7 +11546,7 @@
     <!-- https://example.org/PANORA-ontology#Will -->
 
     <owl:Class rdf:about="https://example.org/PANORA-ontology#Will">
-        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#DivineActiveAttributes"/>
+        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#DivineAttributesOfAction"/>
         <rdfs:label xml:lang="fa">اراده</rdfs:label>
     </owl:Class>
     
@@ -11563,7 +11564,7 @@
     <!-- https://example.org/PANORA-ontology#Wisdom -->
 
     <owl:Class rdf:about="https://example.org/PANORA-ontology#Wisdom">
-        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#DivineActiveAttributes"/>
+        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#DivineAttributesOfAction"/>
         <rdfs:label xml:lang="fa">حکمت</rdfs:label>
     </owl:Class>
     
@@ -11601,15 +11602,6 @@
     <owl:Class rdf:about="https://example.org/PANORA-ontology#WorkplaceColleague">
         <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#WorkRelated"/>
         <rdfs:label xml:lang="fa">همکار در محل کار</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://example.org/PANORA-ontology#WorldBank -->
-
-    <owl:Class rdf:about="https://example.org/PANORA-ontology#WorldBank">
-        <rdfs:subClassOf rdf:resource="https://example.org/PANORA-ontology#IncomeClassification"/>
-        <rdfs:label xml:lang="fa">کم‌درآمد، متوسط، پردرآمد</rdfs:label>
     </owl:Class>
     
 
